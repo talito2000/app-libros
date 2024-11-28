@@ -1,0 +1,452 @@
+[
+  {
+    "title": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes",
+    "year": 1605,
+    "section": "clasicos",
+    "link": "https://www.example.com/don-quijote-de-la-mancha",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'clasicos'. Escrito por Miguel de Cervantes y publicado en el año 1605, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Orgullo y Prejuicio",
+    "author": "Jane Austen",
+    "year": 1813,
+    "section": "clasicos",
+    "link": "https://www.example.com/orgullo-y-prejuicio",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'clasicos'. Escrito por Jane Austen y publicado en el año 1813, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Moby Dick",
+    "author": "Herman Melville",
+    "year": 1851,
+    "section": "clasicos",
+    "link": "https://www.example.com/moby-dick",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'clasicos'. Escrito por Herman Melville y publicado en el año 1851, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Crimen y Castigo",
+    "author": "Fiódor Dostoyevski",
+    "year": 1866,
+    "section": "clasicos",
+    "link": "https://www.example.com/crimen-y-castigo",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'clasicos'. Escrito por Fiódor Dostoyevski y publicado en el año 1866, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "El Gran Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "year": 1925,
+    "section": "clasicos",
+    "link": "https://www.example.com/el-gran-gatsby",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'clasicos'. Escrito por F. Scott Fitzgerald y publicado en el año 1925, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Cumbres Borrascosas",
+    "author": "Emily Brontë",
+    "year": 1847,
+    "section": "clasicos",
+    "link": "https://www.example.com/cumbres-borrascosas",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'clasicos'. Escrito por Emily Brontë y publicado en el año 1847, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Hamlet",
+    "author": "William Shakespeare",
+    "year": 1609,
+    "section": "clasicos",
+    "link": "https://www.example.com/hamlet",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'clasicos'. Escrito por William Shakespeare y publicado en el año 1609, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Anna Karenina",
+    "author": "León Tolstói",
+    "year": 1877,
+    "section": "clasicos",
+    "link": "https://www.example.com/anna-karenina",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'clasicos'. Escrito por León Tolstói y publicado en el año 1877, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Madame Bovary",
+    "author": "Gustave Flaubert",
+    "year": 1857,
+    "section": "clasicos",
+    "link": "https://www.example.com/madame-bovary",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'clasicos'. Escrito por Gustave Flaubert y publicado en el año 1857, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Los Miserables",
+    "author": "Victor Hugo",
+    "year": 1862,
+    "section": "clasicos",
+    "link": "https://www.example.com/los-miserables",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'clasicos'. Escrito por Victor Hugo y publicado en el año 1862, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "1984",
+    "author": "George Orwell",
+    "year": 1949,
+    "section": "ciencia ficcion",
+    "link": "https://www.example.com/1984",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'ciencia ficcion'. Escrito por George Orwell y publicado en el año 1949, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Un Mundo Feliz",
+    "author": "Aldous Huxley",
+    "year": 1932,
+    "section": "ciencia ficcion",
+    "link": "https://www.example.com/un-mundo-feliz",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'ciencia ficcion'. Escrito por Aldous Huxley y publicado en el año 1932, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "year": 1953,
+    "section": "ciencia ficcion",
+    "link": "https://www.example.com/fahrenheit-451",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'ciencia ficcion'. Escrito por Ray Bradbury y publicado en el año 1953, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "year": 1965,
+    "section": "ciencia ficcion",
+    "link": "https://www.example.com/dune",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'ciencia ficcion'. Escrito por Frank Herbert y publicado en el año 1965, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Neuromante",
+    "author": "William Gibson",
+    "year": 1984,
+    "section": "ciencia ficcion",
+    "link": "https://www.example.com/neuromante",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'ciencia ficcion'. Escrito por William Gibson y publicado en el año 1984, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "La Mquina del Tiempo",
+    "author": "H.G. Wells",
+    "year": 1895,
+    "section": "ciencia ficcion",
+    "link": "https://www.example.com/la-mquina-del-tiempo",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'ciencia ficcion'. Escrito por H.G. Wells y publicado en el año 1895, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Fundacin",
+    "author": "Isaac Asimov",
+    "year": 1951,
+    "section": "ciencia ficcion",
+    "link": "https://www.example.com/fundacin",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'ciencia ficcion'. Escrito por Isaac Asimov y publicado en el año 1951, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "El Fin de la Infancia",
+    "author": "Arthur C. Clarke",
+    "year": 1953,
+    "section": "ciencia ficcion",
+    "link": "https://www.example.com/el-fin-de-la-infancia",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'ciencia ficcion'. Escrito por Arthur C. Clarke y publicado en el año 1953, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Snow Crash",
+    "author": "Neal Stephenson",
+    "year": 1992,
+    "section": "ciencia ficcion",
+    "link": "https://www.example.com/snow-crash",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'ciencia ficcion'. Escrito por Neal Stephenson y publicado en el año 1992, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Jurassic Park",
+    "author": "Michael Crichton",
+    "year": 1990,
+    "section": "ciencia ficcion",
+    "link": "https://www.example.com/jurassic-park",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'ciencia ficcion'. Escrito por Michael Crichton y publicado en el año 1990, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "El Diario de Ana Frank",
+    "author": "Ana Frank",
+    "year": 1947,
+    "section": "biografias",
+    "link": "https://www.example.com/el-diario-de-ana-frank",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'biografias'. Escrito por Ana Frank y publicado en el año 1947, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Steve Jobs",
+    "author": "Walter Isaacson",
+    "year": 2011,
+    "section": "biografias",
+    "link": "https://www.example.com/steve-jobs",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'biografias'. Escrito por Walter Isaacson y publicado en el año 2011, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Long Walk to Freedom",
+    "author": "Nelson Mandela",
+    "year": 1994,
+    "section": "biografias",
+    "link": "https://www.example.com/long-walk-to-freedom",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'biografias'. Escrito por Nelson Mandela y publicado en el año 1994, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Churchill Walking with Destiny",
+    "author": "Andrew Roberts",
+    "year": 2018,
+    "section": "biografias",
+    "link": "https://www.example.com/churchill:-walking-with-destiny",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'biografias'. Escrito por Andrew Roberts y publicado en el año 2018, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Alexander Hamilton",
+    "author": "Ron Chernow",
+    "year": 2004,
+    "section": "biografias",
+    "link": "https://www.example.com/alexander-hamilton",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'biografias'. Escrito por Ron Chernow y publicado en el año 2004, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Becoming",
+    "author": "Michelle Obama",
+    "year": 2018,
+    "section": "biografias",
+    "link": "https://www.example.com/becoming",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'biografias'. Escrito por Michelle Obama y publicado en el año 2018, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "The Story of My Life",
+    "author": "Helen Keller",
+    "year": 1903,
+    "section": "biografias",
+    "link": "https://www.example.com/the-story-of-my-life",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'biografias'. Escrito por Helen Keller y publicado en el año 1903, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "The Wright Brothers",
+    "author": "David McCullough",
+    "year": 2015,
+    "section": "biografias",
+    "link": "https://www.example.com/the-wright-brothers",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'biografias'. Escrito por David McCullough y publicado en el año 2015, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Educated",
+    "author": "Tara Westover",
+    "year": 2018,
+    "section": "biografias",
+    "link": "https://www.example.com/educated",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'biografias'. Escrito por Tara Westover y publicado en el año 2018, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Einstein His Life and Universe",
+    "author": "Walter Isaacson",
+    "year": 2007,
+    "section": "biografias",
+    "link": "https://www.example.com/einstein:-his-life-and-universe",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'biografias'. Escrito por Walter Isaacson y publicado en el año 2007, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "El Nombre de la Rosa",
+    "author": "Umberto Eco",
+    "year": 1980,
+    "section": "misterio",
+    "link": "https://www.example.com/el-nombre-de-la-rosa",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'misterio'. Escrito por Umberto Eco y publicado en el año 1980, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "La Chica del Tren",
+    "author": "Paula Hawkins",
+    "year": 2015,
+    "section": "misterio",
+    "link": "https://www.example.com/la-chica-del-tren",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'misterio'. Escrito por Paula Hawkins y publicado en el año 2015, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "El Cdigo Da Vinci",
+    "author": "Dan Brown",
+    "year": 2003,
+    "section": "misterio",
+    "link": "https://www.example.com/el-cdigo-da-vinci",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'misterio'. Escrito por Dan Brown y publicado en el año 2003, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "La Sombra del Viento",
+    "author": "Carlos Ruiz Zafón",
+    "year": 2001,
+    "section": "misterio",
+    "link": "https://www.example.com/la-sombra-del-viento",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'misterio'. Escrito por Carlos Ruiz Zafón y publicado en el año 2001, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Diez Negritos",
+    "author": "Agatha Christie",
+    "year": 1939,
+    "section": "misterio",
+    "link": "https://www.example.com/diez-negritos",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'misterio'. Escrito por Agatha Christie y publicado en el año 1939, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "El Silencio de los Corderos",
+    "author": "Thomas Harris",
+    "year": 1988,
+    "section": "misterio",
+    "link": "https://www.example.com/el-silencio-de-los-corderos",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'misterio'. Escrito por Thomas Harris y publicado en el año 1988, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "El Psicoanalista",
+    "author": "John Katzenbach",
+    "year": 2002,
+    "section": "misterio",
+    "link": "https://www.example.com/el-psicoanalista",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'misterio'. Escrito por John Katzenbach y publicado en el año 2002, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "La Verdad sobre el Caso Harry Quebert",
+    "author": "Joël Dicker",
+    "year": 2012,
+    "section": "misterio",
+    "link": "https://www.example.com/la-verdad-sobre-el-caso-harry-quebert",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'misterio'. Escrito por Joël Dicker y publicado en el año 2012, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Perdida",
+    "author": "Gillian Flynn",
+    "year": 2012,
+    "section": "misterio",
+    "link": "https://www.example.com/perdida",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'misterio'. Escrito por Gillian Flynn y publicado en el año 2012, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Sherlock Holmes El Sabueso de los Baskerville",
+    "author": "Arthur Conan Doyle",
+    "year": 1902,
+    "section": "misterio",
+    "link": "https://www.example.com/sherlock-holmes:-el-sabueso-de-los-baskerville",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'misterio'. Escrito por Arthur Conan Doyle y publicado en el año 1902, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Cien Aos de Soledad",
+    "author": "Gabriel García Márquez",
+    "year": 1967,
+    "section": "novelas",
+    "link": "https://www.example.com/cien-aos-de-soledad",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'novelas'. Escrito por Gabriel García Márquez y publicado en el año 1967, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "La Casa de los Espritus",
+    "author": "Isabel Allende",
+    "year": 1982,
+    "section": "novelas",
+    "link": "https://www.example.com/la-casa-de-los-espritus",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'novelas'. Escrito por Isabel Allende y publicado en el año 1982, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Rayuela",
+    "author": "Julio Cortázar",
+    "year": 1963,
+    "section": "novelas",
+    "link": "https://www.example.com/rayuela",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'novelas'. Escrito por Julio Cortázar y publicado en el año 1963, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "El Amor en los Tiempos del Clera",
+    "author": "Gabriel García Márquez",
+    "year": 1985,
+    "section": "novelas",
+    "link": "https://www.example.com/el-amor-en-los-tiempos-del-clera",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'novelas'. Escrito por Gabriel García Márquez y publicado en el año 1985, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "La Sombra del Viento",
+    "author": "Carlos Ruiz Zafón",
+    "year": 2001,
+    "section": "novelas",
+    "link": "https://www.example.com/la-sombra-del-viento",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'novelas'. Escrito por Carlos Ruiz Zafón y publicado en el año 2001, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "El Alquimista",
+    "author": "Paulo Coelho",
+    "year": 1988,
+    "section": "novelas",
+    "link": "https://www.example.com/el-alquimista",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'novelas'. Escrito por Paulo Coelho y publicado en el año 1988, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "Los Pilares de la Tierra",
+    "author": "Ken Follett",
+    "year": 1989,
+    "section": "novelas",
+    "link": "https://www.example.com/los-pilares-de-la-tierra",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'novelas'. Escrito por Ken Follett y publicado en el año 1989, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "El Tiempo entre Costuras",
+    "author": "María Dueñas",
+    "year": 2009,
+    "section": "novelas",
+    "link": "https://www.example.com/el-tiempo-entre-costuras",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'novelas'. Escrito por María Dueñas y publicado en el año 2009, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "El Principito",
+    "author": "Antoine de Saint-Exupéry",
+    "year": 1943,
+    "section": "novelas",
+    "link": "https://www.example.com/el-principito",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'novelas'. Escrito por Antoine de Saint-Exupéry y publicado en el año 1943, este libro es reconocido por su importancia en su género."
+  },
+  {
+    "title": "La Ciudad y los Perros",
+    "author": "Mario Vargas Llosa",
+    "year": 1963,
+    "section": "novelas",
+    "link": "https://www.example.com/la-ciudad-y-los-perros",
+    "image": "https://picsum.photos/600/900",
+    "description": "Este es un libro que forma parte de la sección 'novelas'. Escrito por Mario Vargas Llosa y publicado en el año 1963, este libro es reconocido por su importancia en su género."
+  }
+]
