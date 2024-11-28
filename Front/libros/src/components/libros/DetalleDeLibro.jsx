@@ -13,7 +13,7 @@ import {
 
 const DetalleDeLibro = () => {
   const { id } = useParams(); // ID del libro desde la URL
-  const [libro, setLibro] = useState([]); // Estado para los detalles del libro
+  const [libro, setLibro] = useState({}); // Estado para los detalles del libro
   const [comentarios, setComentarios] = useState([]); // Estado para los comentarios del libro
   const [nuevoComentario, setNuevoComentario] = useState(""); // Estado para el nuevo comentario
   const [error, setError] = useState("");
@@ -21,29 +21,51 @@ const DetalleDeLibro = () => {
 
   // Obtener detalles del libro y sus comentarios
   useEffect(() => {
-    // Obtener detalles del libro
-    fetch(`http://localhost:3333/api/books/${id}`, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-        authorization: localStorage.getItem("token"),
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => setLibro(data))
-      .catch((err) => console.error("Error al obtener el libro:", err));
+    const fetchData = async () => {
+      try {
+        // Obtener detalles del libro
+        const libroResponse = await fetch(
+          `http://localhost:3333/api/books/${id}`,
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+              authorization: localStorage.getItem("token"),
+            },
+          }
+        );
 
-    // Obtener comentarios del libro
-    fetch(`http://localhost:3333/api/comentarios/${id}`, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-        authorization: localStorage.getItem("token"),
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => setComentarios(data))
-      .catch((err) => console.error("Error al obtener comentarios:", err));
+        if (libroResponse.ok) {
+          const libroData = await libroResponse.json();
+          setLibro(libroData);
+        } else {
+          console.error("Error al obtener el libro");
+        }
+
+        // Obtener comentarios del libro
+        const comentariosResponse = await fetch(
+          `http://localhost:3333/api/comentarios/${id}`,
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+              authorization: localStorage.getItem("token"),
+            },
+          }
+        );
+
+        if (comentariosResponse.ok) {
+          const comentariosData = await comentariosResponse.json();
+          setComentarios(comentariosData);
+        } else {
+          console.error("Error al obtener los comentarios");
+        }
+      } catch (err) {
+        console.error("Error al cargar los datos:", err);
+      }
+    };
+
+    fetchData();
   }, [id]);
 
   // Manejar envío del nuevo comentario
@@ -145,6 +167,24 @@ const DetalleDeLibro = () => {
           >
             <strong>Autor:</strong> {libro.author}
           </Typography>
+          <Typography
+            variant="body1"
+            sx={{ fontSize: "1.2rem", marginBottom: 1 }}
+          >
+            <strong>Descripción:</strong> {libro.description}
+          </Typography>
+          <Typography
+            variant="body1"
+            sx={{ fontSize: "1.2rem", marginBottom: 1 }}
+          >
+            <strong>Sección:</strong> {libro.section}
+          </Typography>
+          <Typography
+            variant="body1"
+            sx={{ fontSize: "1.2rem", marginBottom: 2 }}
+          >
+            <strong>Año:</strong> {libro.year}
+          </Typography>
           <Button
             variant="contained"
             color="secondary"
@@ -201,6 +241,31 @@ const DetalleDeLibro = () => {
           Enviar comentario
         </Button>
       </Box>
+
+      {/* Renderizar comentarios */}
+      {comentarios.map((comentario) => (
+        <Box
+          key={comentario._id}
+          sx={{
+            padding: 2,
+            backgroundColor: "#ffffff",
+            borderRadius: 2,
+            boxShadow: "0px 3px 10px rgba(0,0,0,0.1)",
+            marginBottom: 3,
+          }}
+        >
+          <Typography variant="body1" sx={{ fontSize: "1.1rem" }}>
+            <strong>{comentario.usuario_email}:</strong> {comentario.comentario}
+          </Typography>
+          <Typography
+            variant="caption"
+            color="text.secondary"
+            sx={{ display: "block", marginTop: 1 }}
+          >
+            {new Date(comentario.fecha).toLocaleString()}
+          </Typography>
+        </Box>
+      ))}
     </Box>
   );
 };
