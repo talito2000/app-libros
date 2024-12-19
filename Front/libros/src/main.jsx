@@ -10,6 +10,7 @@ import DetalleDeLibro from "./components/libros/DetalleDeLibro.jsx";
 import AgregarLibro from "./components/libros/AgregarLibro.jsx";
 import ConfirmacionLibro from "./components/libros/ConfirmacionLibro.jsx";
 import Favoritos from "./components/libros/Favoritos.jsx";
+import Perfil from "./components/login/Perfil.jsx";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,14 @@ const router = createBrowserRouter([
         element: (
           <ProtectedRoute>
             <AgregarLibro />
+          </ProtectedRoute>
+        ),
+      },
+      {
+        path: "/perfil",
+        element: (
+          <ProtectedRoute>
+            <Perfil />
           </ProtectedRoute>
         ),
       },

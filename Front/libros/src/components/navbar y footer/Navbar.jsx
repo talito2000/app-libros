@@ -61,9 +61,19 @@ const NavBar = ({ onFiltrarSeccion }) => {
                 color="inherit"
                 component={Link}
                 to="/"
+                onClick={() => onFiltrarSeccion(null)}
                 sx={{ marginRight: 2 }}
               >
                 Home
+              </Button>
+
+              <Button
+                color="inherit"
+                component={Link}
+                to="/perfil"
+                sx={{ marginRight: 2 }}
+              >
+                Perfil
               </Button>
 
               {/* Botón Favoritos */}

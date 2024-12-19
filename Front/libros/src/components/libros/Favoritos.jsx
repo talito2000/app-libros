@@ -7,13 +7,15 @@ import {
   CardContent,
   Typography,
   Button,
+  Alert,
 } from "@mui/material";
-import { useNavigate } from "react-router-dom";
 
 const Favoritos = () => {
   const [favoritos, setFavoritos] = useState([]);
-  const navigate = useNavigate();
+  const [successMessage, setSuccessMessage] = useState("");
+  const [error, setError] = useState("");
 
+  // Obtener favoritos al cargar el componente
   useEffect(() => {
     fetch("http://localhost:3333/api/favoritos", {
       method: "GET",
@@ -27,11 +29,52 @@ const Favoritos = () => {
       .catch((err) => console.error("Error al obtener favoritos:", err));
   }, []);
 
+  // Manejar la eliminación de un favorito
+  const handleEliminarFavorito = async (libroId) => {
+    setError("");
+    setSuccessMessage("");
+
+    try {
+      const response = await fetch(
+        `http://localhost:3333/api/favoritos/${libroId}`,
+        {
+          method: "DELETE",
+          headers: {
+            "Content-Type": "application/json",
+            authorization: localStorage.getItem("token"),
+          },
+        }
+      );
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setFavoritos(favoritos.filter((fav) => fav.libro._id !== libroId)); // Actualiza la lista
+        setSuccessMessage("El libro fue eliminado de tus favoritos.");
+      } else {
+        setError(data.message || "Error al eliminar de favoritos.");
+      }
+    } catch (error) {
+      console.error("Error al eliminar favorito:", error.message);
+      setError("Ocurrió un error al eliminar de favoritos.");
+    }
+  };
+
   return (
     <Box sx={{ padding: 4 }}>
       <Typography variant="h4" gutterBottom>
         Mis Favoritos
       </Typography>
+      {successMessage && (
+        <Alert severity="success" sx={{ mb: 2 }}>
+          {successMessage}
+        </Alert>
+      )}
+      {error && (
+        <Alert severity="error" sx={{ mb: 2 }}>
+          {error}
+        </Alert>
+      )}
       <Grid container spacing={4}>
         {favoritos.map((favorito) => (
           <Grid item xs={12} sm={6} md={4} key={favorito.libro._id}>
@@ -49,11 +92,11 @@ const Favoritos = () => {
                 </Typography>
                 <Button
                   variant="contained"
-                  color="primary"
+                  color="error"
+                  onClick={() => handleEliminarFavorito(favorito.libro._id)}
                   sx={{ marginTop: 2 }}
-                  onClick={() => navigate(`/books/${favorito.libro._id}`)}
                 >
-                  Ver Detalle
+                  Eliminar de Favoritos
                 </Button>
               </CardContent>
             </Card>

@@ -1,4 +1,4 @@
-import { MongoClient } from "mongodb";
+import { MongoClient, ObjectId } from "mongodb";
 import bcrypt from "bcrypt";
 import { crearToken } from "./token.service.js";
 
@@ -8,18 +8,26 @@ const db = cliente.db("AH20232CP1");
 const usuarios = db.collection("usuarios");
 
 export async function crearUsuario(usuario) {
-  // conectamos a la base de datos.
+  // Conectamos a la base de datos.
   await cliente.connect();
+
   // Comprobamos si el usuario existe previo a crear uno nuevo.
   const existeElUsuario = await usuarios.findOne({ email: usuario.email });
   if (existeElUsuario) throw new Error("El usuario con ese Email ya existe.");
-  // Eliminamos del objeto usuario el campo "passwordConfirm" -> ya que no es necesario en la base de datos ni para la autenticacion.
-  const nuevoUsuario = { ...usuario, passwordConfirm: undefined };
-  // Hasheamos la contraseña con (bcrypt) (10) -> Define la cantidad de rondas de hashing (la fuerza del hash).
-  nuevoUsuario.password = await bcrypt.hash(usuario.password, 10);
-  // Lo agregamos a la base de datos.
+
+  // Creamos el objeto del nuevo usuario con el campo "nombre" incluido
+  const nuevoUsuario = {
+    nombre: usuario.nombre, // Incluimos el nombre
+    email: usuario.email,
+    password: await bcrypt.hash(usuario.password, 10), // Hasheamos la contraseña
+    passwordConfirm: usuario.passwordConfirm, // Mantenemos el passwordConfirm
+    createdAt: new Date(), // Agregamos la fecha actual
+  };
+
+  // Insertamos el usuario en la base de datos.
   await usuarios.insertOne(nuevoUsuario);
-  // Retornamos el usuarion, sin el campo password.
+
+  // Retornamos el usuario, ocultando la contraseña (pero dejando passwordConfirm si es necesario).
   return { ...nuevoUsuario, password: undefined };
 }
 
@@ -49,3 +57,8 @@ export async function login(usuario) {
     passwordConfirm: undefined,
   };
 }
+
+export const obtenerUsuarioPorId = async (userId) => {
+  await cliente.connect();
+  return await db.collection("usuarios").findOne({ _id: new ObjectId(userId) });
+};
